@@ -1,0 +1,14 @@
+[
+  {
+    "remote": "github",
+	"repository": "stormbreaker-project/kernel_xiaomi_vince",
+	"target_path": "kernel/xiaomi/vince"
+	"revision": "r11.0"
+  },
+  {
+    "remote": "github",
+	"repository": "IAmSalvaMartini/android_vendor_xiaomi_vince",
+	"target_path": "vendor/xiaomi/vince"
+	"revision": "elle"
+  }
+] 

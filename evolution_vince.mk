@@ -21,16 +21,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common RevengeOS stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1440
 
 # Build Official
-REVENGEOS_BUILDTYPE := OFFICIAL
+EVO_BUILD_TYPE := OFFICIAL
+
+# Maintainer Prop
+EVO_DONATE_URL := https://paypal.me/IAmSalvaMartini
+EVO_MAINTAINER := Professor
+
+#gapps
+WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := revengeos_vince
+PRODUCT_NAME := evolution_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
