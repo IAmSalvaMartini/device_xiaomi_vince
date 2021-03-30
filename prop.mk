@@ -154,6 +154,11 @@ ro.com.google.ime.kb_pad_port_b=1
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.control_privapp_permissions=log
 
+# Iorap
+PRODUCT_PROPERTY_OVERRIDES += \
+    iorapd.perfetto.enable=true \
+    iorapd.readahead.enable=true
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
