@@ -266,6 +266,10 @@ net.tcp.2g_init_rwnd=10
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.usb.config.extra=none
 
+# Vulkan
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.hwui.renderer=skiavk
+    
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
