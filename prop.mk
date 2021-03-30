@@ -244,6 +244,10 @@ persist.vendor.radio.data_con_rprt=1 \
 persist.radio.calls.on.ims=1 \
 persist.vendor.radio.add_power_save=1
 
+# Seamless transfer
+PRODUCT_PRODUCT_PROPERTIES += \
+    sys.fflag.override.settings_seamless_transfer=true
+
 # SurfaceFlinger
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.sf.early_phase_offset_ns=1500000 \
