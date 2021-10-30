@@ -326,6 +326,10 @@ PRODUCT_PACKAGES += CellBroadcastAppPlatform
 PRODUCT_PACKAGES += CellBroadcastServiceModulePlatform
 PRODUCT_PACKAGES += com.android.tethering.inprocess
 
+#Always preopt extracted APKs to prevent extracting out of the APK for gms
+# modules.
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
