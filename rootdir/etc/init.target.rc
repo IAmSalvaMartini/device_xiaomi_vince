@@ -184,7 +184,8 @@ on charger
 
 on boot
     chown system system /sys/kernel/hbtp/display_pwr
-
+    start vendor.rmt_storage
+    
 # Update cpusets on boot and we want better load balancing
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/foreground/cpus 0-6
