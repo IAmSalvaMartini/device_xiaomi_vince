@@ -344,6 +344,9 @@ PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
+# Speed profile services and wifi-service to reduce RAM and storage.
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
