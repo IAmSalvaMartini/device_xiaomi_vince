@@ -96,13 +96,18 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl \
+    android.hardware.audio@5.0.vendor \
     android.hardware.audio@2.0-service \
+    android.hardware.audio@2.0.vendor \
     android.hardware.audio.effect@5.0-impl \
+    android.hardware.audio.effect@5.0.vendor \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.soundtrigger@2.2-impl \
     android.hardware.soundtrigger@2.2-service \
+    android.hardware.soundtrigger@2.2.vendor \
     audio.a2dp.default \
     audio.bluetooth.default \
+    android.hardware.bluetooth.audio@2.1.vendor \
     audio.primary.msm8953 \
     audio.r_submix.default \
     audio.usb.default \
@@ -162,7 +167,8 @@ PRODUCT_PACKAGES += \
 # Consumerir
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
-    android.hardware.ir@1.0-service
+    android.hardware.ir@1.0-service \
+    android.hardware.ir@1.0.vendor
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -175,6 +181,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.composer@2.1.vendor \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
@@ -199,11 +206,13 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service-lazy \
     android.hardware.drm@1.3-service.widevine \
-    android.hardware.drm@1.3-service-lazy.clearkey
+    android.hardware.drm@1.3-service-lazy.clearkey \
+    android.hardware.drm@1.3.vendor
 
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1 \
+    android.hardware.biometrics.fingerprint@2.1.vendor \
     libunwind
 
 # FM
@@ -237,6 +246,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
     android.hardware.health@2.0-service
+    android.hardware.health@2.0.vendor
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -402,6 +412,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.4 \
     android.hardware.radio.config@1.0 \
     android.hardware.secure_element@1.0 \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.config@1.0.vendor \
+    android.hardware.secure_element@1.0.vendor \
     librmnetctl \
     libcnefeatureconfig \
     libxml2 \
@@ -424,6 +437,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
+    android.hardware.sensors@1.0.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
@@ -441,6 +455,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service \
+    android.hardware.thermal@1.0.vendor \
     thermal.msm8953
 
 PRODUCT_COPY_FILES += \
@@ -448,12 +463,14 @@ PRODUCT_COPY_FILES += \
 
 # USB HAL
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.vince
+    android.hardware.usb@1.0-service.vince \
+    android.hardware.usb@1.0.vendor
 
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
+    android.hardware.vibrator@1.0.vendor
 
 # VNDK
 PRODUCT_PACKAGES += \
@@ -485,6 +502,7 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy \
+    android.hardware.wifi@1.0.vendor \
     libcld80211 \
     libwpa_client \
     hostapd \
