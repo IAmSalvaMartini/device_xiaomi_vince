@@ -320,6 +320,12 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
     libandroid_net
 
+# Do not spin up a separate process for the network stack on go devices, use an in-process APK.
+PRODUCT_PACKAGES += InProcessNetworkStack
+PRODUCT_PACKAGES += CellBroadcastAppPlatform
+PRODUCT_PACKAGES += CellBroadcastServiceModulePlatform
+PRODUCT_PACKAGES += com.android.tethering.inprocess
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
