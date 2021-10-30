@@ -123,7 +123,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1 \
     android.system.net.netd@1.1.vendor
-    
+
+# Neuralnetworks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3 \
+    android.hardware.neuralnetworks@1.3.vendor
+
 # Audio configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
@@ -190,6 +195,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.composer@2.1.vendor \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
+    android.frameworks.displayservice@1.0_32 \
+    android.frameworks.displayservice@1.0.vendor \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     copybit.msm8953 \
