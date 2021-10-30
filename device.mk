@@ -259,7 +259,7 @@ PRODUCT_PACKAGES += \
 # Healthd
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
-    android.hardware.health@2.0-service
+    android.hardware.health@2.0-service \
     android.hardware.health@2.0.vendor
 
 # HIDL
@@ -436,7 +436,7 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
-    telephony-ext    
+    telephony-ext \
     qti-telephony-hidl-wrapper-prd \
     qti_telephony_hidl_wrapper_prd.xml
 
@@ -450,7 +450,7 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service
+    android.hardware.sensors@1.0-service \
     android.hardware.sensors@1.0.vendor
 
 PRODUCT_COPY_FILES += \
@@ -483,7 +483,7 @@ PRODUCT_PACKAGES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
-    android.hardware.vibrator@1.0-service
+    android.hardware.vibrator@1.0-service \
     android.hardware.vibrator@1.0.vendor
 
 # VNDK
@@ -534,5 +534,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
