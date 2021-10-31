@@ -215,6 +215,12 @@ VENDOR_SECURITY_PATCH := 2020-01-01
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+SELINUX_IGNORE_NEVERALLOWS := true
+
+
+# HACKS [TO BE REMOVED]
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/temp
+# END OF HACKS
 
 # Thermal
 TARGET_THERMAL_HAL := true
