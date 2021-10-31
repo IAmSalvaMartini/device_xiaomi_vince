@@ -35,6 +35,9 @@ EVO_MAINTAINER := Professor
 #gapps
 WITH_GAPPS := true
 
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
 PRODUCT_NAME := evolution_vince
